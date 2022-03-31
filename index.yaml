@@ -1,0 +1,57 @@
+# YAML means YAML aint markup language
+# YAML basically is a key value pair
+
+# Basic key-value pair
+name: user-authentication
+port: 2000
+version: 1.00
+# Enclosing value in an object
+user:
+  location: Pantang-Abokobi
+  is_faithful: true
+  is_employed: false
+
+# Working with list items
+names:
+  - username: George Koranteng
+    age: 93
+    location: Amansamag
+    is_tall: off
+  - username: James Dean
+    age: 83
+    location: Accra
+    is_tall: false
+
+# Simple list values
+restaurants:
+  - Aqua Safari
+  - Agartha Special
+  - Kempinski
+
+# Having lists in lists (nested lists)
+favourite_songs:
+  - name: Jennifer Hudson
+    title: Peru para
+    versions: [1, 1.01, 2.1]
+  - name: Kendrick Lamar
+    title: Guy Penrod
+    versions: [13, 49, 9]
+
+# Multiline String
+multilineString: |
+  This is a multiline string that is not dependant on soo many things
+  This is just some random sample
+
+# .env variable
+# variables are preceeded with  a dolar sign
+current_environement: $NODE_ENV
+
+# Placeholders
+container: { { This is an example container } }
+# Inside one yaml file we can have multiple compomnets
+# We can separate this components by using ---
+---
+name: ulius Casear
+package:
+  name: atals
+  version: 0.01
